@@ -17,7 +17,7 @@ The robot was split into 3 main zones with specific functions for each. A front,
 
 ## Power System
 ![image_of_igvc_robot_front](images/igvc-robot-front-power.jpg)
-Several entrants would power systems off of generators and with AC to DC converts. The electrical system was an all DC approach using conventional 12V marine deep cycle batteries which were charged with standard 12V battery chargers. Everything was powered off of the batteries including the laptop removing the need to use the AC adapter. In all there was a 24V, 5V, 9V, and an 18.5V (laptop) rail. The motors were connected to the emergency stop system so that only motor power could be killed. This allowed for testing and sensor monitoring with a fully powered system that had hardware disabled motors. This greatly enhanced testing compared to the previous approach of e-stopping the entire system. The robot could be push tested while monitoring sensor data and algorithm decisions real time before running the platform. This with wheels up testing on cinder blocks presented multiple steps of unit testing which allowed for edge case exploration. The system also had headlights. This allowed for system testing at night while the competition did not to runs during the night the event was open 24hrs continuously from the first day to the last and we were not the only team which would test on the practice area at night (more than a few times the robot was running at 2am and we weren't the only ones).
+Several entrants would power systems off of generators and with AC to DC converts. The electrical system was an all DC approach using conventional 12V marine deep cycle batteries which were charged with standard 12V battery chargers. Everything was powered off of the batteries including the laptop removing the need to use the AC adapter. In all there was a 24V, 5V, 9V, and an 18.5V (laptop) rail. The motors were connected to the emergency stop system so that only motor power could be killed. This allowed for testing and sensor monitoring with a fully powered system that had hardware disabled motors. This greatly enhanced testing compared to the previous approach of e-stopping the entire system. The robot could be push tested while monitoring sensor data and algorithm decisions real time before running the platform. This with wheels up testing on cinder blocks presented multiple steps of unit testing which allowed for edge case exploration. The system also had headlights. This allowed for system testing at night while the competition did not do runs during the night the event was open 24hrs continuously from the first day to the last and we were not the only team which would test on the practice area at night (more than a few times the robot was running at 2am and we weren't the only ones). Additionally, most sensors and peripherals were run through powered hubs (USB and Firewire) as laptops cannot typically reliably power devices. 
 
 #### Diagram of Power Distribution
 ```mermaid
@@ -25,20 +25,21 @@ graph TD;
     A[2x 12V Batteries]-->B[24V];
     B-->C[5V];
     B-->D[18.5V];
-    B-->E[9V];
+    B-->E[9V]
+    E-->Q["Firewire Hub"]
     D-->F[Laptop]
-    C-->N["USB Hub"]
+    C-->N["USB Hub"];
     N-->G["Arduino (x6)"]
     B-->O[E-Stop]
     O-->H["Motor Drivers (OSMC)"]
     B-->I[LIDAR]
-    F-->L[Camera]
+    Q-->L[Camera]
     F-->M[GPS]
     B-->P["LED Flood Lights"]
 ```
 
 ## Weather Robustness
-A bit of effort was made to improve the weather performance over the years. The competition would only stop running attempts on the course for lightning and many teams could not run in the rain. By running in the rain, we could get more attempts at the course while other teams gave up their slots, we could also do more field testing on the test track, and the vision system which would always have challenges with shadows performed better with the diffuse lighting that the cloud cover provided. The body panels were sealed to the frame with a gasket, drip loops and custom fabricated glands were used where sensor cables needed to pass through to the outside. These pass throughs were located under the front and rear overhangs. The more runs we could get the more bugs we could fit. Teams were ranked but distance of their longest run and then tie broken by speed. We would approach most runs as welp lets try this new thing. Our 3rd place run in 2011 year was done with a faulty and intemittent rear wheel and that was our last slot of the entire event. 
+A bit of effort was made to improve the weather performance over the years. The competition would only stop running attempts on the course for lightning and many teams could not run in the rain. By running in the rain, we could get more attempts at the course while other teams gave up their slots, we could also do more field testing on the test track, and the vision system which would always have challenges with shadows performed better with the diffuse lighting that the cloud cover provided. The body panels were sealed to the frame with a gasket, drip loops and custom fabricated glands were used where sensor cables needed to pass through to the outside. These pass throughs were located under the front and rear overhangs. The more runs we could get the more bugs we could fit. Teams were ranked but distance of their longest run and then tie broken by speed. We would approach most runs as lets try this new thing. Our 3rd place run in 2011 year was done with a faulty and intemittent rear wheel and that was our last slot of the entire event. 
 
 ## Rankings & Video
 From 2008 to 2012 the IGVC team consistently in the top 10 with 1x 3rd place, and 2x 5th place finishes. Video of the 3rd place run in 2011. 
