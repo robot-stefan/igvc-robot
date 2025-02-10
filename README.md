@@ -1,5 +1,5 @@
 # IGVC Robot
-This platform was developed for the 2011 - 2012 Intelligent Ground Vehicle Competition (IGVC). In short IGVC is a lower cost version of the DARPA Grand Challenge that is targeted towards university undergrad teams. The 2011 platform drew many elements from the prior year’s system frame design, layout, and systems integration. I spent time on frame, system layout, sensor placement, and overall integration on the previous generation. For this new generation I worked on the electrical subsystem, doing a number of the harnesses, and provided a more advisory role to other team members. Overall, these are less than golf cart sized platforms that would drive on an outdoors obstacle course composed of painted lanes, barrels, grass, trashcans, ramps, fences, etc and largely rain or shine other than a thunderstorm.
+I participated in this compeition in college and this particular platform was developed for the 2011 - 2012 Intelligent Ground Vehicle Competition (IGVC)[^IGVC]. In short IGVC is a lower cost version of the DARPA Grand Challenge that is targeted towards university undergrad teams. The 2011 platform drew many elements from the prior year’s system frame design, layout, and systems integration. I spent time on frame, system layout, sensor placement, and overall integration on the previous generation. For this new generation I worked on the electrical subsystem, doing a number of the harnesses, and provided a more advisory role to other team members. Overall, these are less than golf cart sized platforms that would drive on an outdoors obstacle course composed of painted lanes, barrels, grass, trashcans, ramps, fences, etc and largely rain or shine other than a thunderstorm.
 
 | Robot Rendering | Robot with Callouts |
 | --- | --- |
@@ -44,4 +44,5 @@ A bit of effort was made to improve the weather performance over the years. The 
 ## Rankings & Video
 From 2008 to 2012 the IGVC team consistently in the top 10 with 1x 3rd place, and 2x 5th place finishes. Video of the 3rd place run in 2011. 
 
-[^NAV200]: NAV200 Info can be found at https://circuitben.net/node/372.
+[^NAV200]: Additional info on this and the SICK NAV200 can be found at https://circuitben.net/node/372.
+[^IGVC]: [Intelligent Ground Vehicle Competition](http://www.igvc.org/)
